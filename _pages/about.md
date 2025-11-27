@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Siddarth Shinde"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I’m an undergraduate in the Department of Computer Science at North Carolina State University. I’m especially interested in quantum computing systems, architectures, and security.
+I’m an undergraduate in the Department of Computer Science at North Carolina State University. My interests lie in quantum computing systems, architectures, and security.
 
 Research
 ======

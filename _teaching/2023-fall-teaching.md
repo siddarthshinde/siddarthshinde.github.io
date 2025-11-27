@@ -8,7 +8,7 @@ date: 2023-08-01
 location: "Raleigh, NC"
 ---
 
-In Fall 2023, I served as a teaching assistant for CSC 110: Computer Science Principles at NC State University.
+In Fall 2023, I served as a teaching assistant for CSC 110: Computer Science Principles.
 
 I helped support an introductory cohort of students as they learned foundational computing concepts and Python programming. My responsibilities included:
 

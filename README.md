@@ -1,3 +1,8 @@
+<!-- Notes for self:
+"published in" in publications is in single.html and single archive.html -->
+
+
+
 <!-- # Academic Pages
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 

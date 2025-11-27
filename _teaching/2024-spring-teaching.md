@@ -8,9 +8,10 @@ date: 2024-01-01
 location: "Raleigh, NC"
 ---
 
-In Spring 2024, I was a teaching assistant for CSC 116: Introduction to Computing (Java) at NC State University.
 
-CSC 116 is an introductory programming course that covers fundamental problem-solving skills, Java syntax and semantics, testing, and basic data structures. My responsibilities included:
+CSC 116 is an introductory programming course that covers fundamental problem-solving skills, Java syntax and semantics, testing, and basic data structures. 
+
+My responsibilities included:
 
 - Holding regular office hours to help students debug Java programs and understand core concepts like control flow, arrays, and objects  
 - Assisting with grading of programming assignments, labs, and exams  

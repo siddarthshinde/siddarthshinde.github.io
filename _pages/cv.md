@@ -58,15 +58,15 @@ Projects
   * Provides modular cost-model components for cross-device comparisons and reproducible configurations for circuits, shots, and devices.
 
 * **RPi Router Instructions Website** — Hugo, GitHub Pages (Nov. 2025)  
-  * Co-authored and edited a public documentation site that teaches beginners how to turn a Raspberry Pi into a secure router using RaspAP, including VPN, DNS, and ad-blocking setup.  
+  * Co-authored and edited a public documentation [site](https://ethanxu1.github.io/rpiinstructions.github.io/){:target="_blank"} that teaches beginners how to turn a Raspberry Pi into a secure router using RaspAP, including VPN, DNS, and ad-blocking setup.  
   * Maintain the Hugo-based documentation stack and GitHub Pages deployment, updating content as router software and OS images evolve.
 
 * **HACK Hardware, nand2tetris** — HDL (Aug. 2024)  
-  * Designed and implemented elementary logic gates, a 16KB memory unit, program counter, and ALU from scratch in HACK HDL following the nand2tetris specification.
+  * Designed and implemented elementary logic gates, a 16KB memory unit, program counter, and ALU from scratch in HACK HDL following the [nand2tetris](https://github.com/siddarthshinde/nand2tetris-implementation){:target="_blank"} specification.
 
 * **CoffeeMaker** — Java, AngularJS, Spring, Hibernate, MySQL, JUnit (May 2024)  
   * Built a full-stack coffee-ordering web app in a team of five, with 10+ REST endpoints and an AngularJS front end.  
-  * Implemented backend authentication with Spring Security and Hibernate; improved perceived performance and reduced load times by ~30%.
+  * Implemented backend authentication with Spring Security and Hibernate; improved perceived performance and reduced load times.
 
 * **Maze** — DOSBox, x86 Assembly (Aug. 2023)  
   * Wrote an 8086 assembly subroutine that navigates a 2D maze in under 5,000 instructions for 20 different mazes (up to 5 KB in size).
@@ -82,7 +82,7 @@ Awards and honors
 Technical skills
 ======
 * **Languages:** Python, C, Java, JavaScript, SQL, x86 Assembly, HTML/CSS  
-* **Libraries/Frameworks:** NumPy, Pandas, Matplotlib, Qiskit Runtime, Spring, Hibernate, AngularJS, JUnit  
+* **Libraries/Frameworks:** NumPy, Pandas, Matplotlib, Qiskit, Spring, Hibernate, AngularJS, JUnit  
 * **Tools/Platforms:** Git, Docker, Linux, ROS
 
 Publications
@@ -101,7 +101,3 @@ Teaching
 {% endfor %}
 </ul>
 
-Service and leadership
-======
-* Teaching assistant and mentor for introductory and theory-focused CS courses at NC State.  
-* Informal peer mentoring for classmates interested in quantum computing, systems, and academic paths.
