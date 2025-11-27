@@ -13,7 +13,7 @@ title                    : "Siddarth Shinde"
 title_separator          : "-"
 name                     : &name "Siddarth Shinde"
 description              : &description "Siddarth Shinde's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://excalibur487.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://siddarthshinde.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -48,7 +48,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "excalibur487"
+  github           : "siddarthshinde"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -84,7 +84,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: ''    
   conferences:
     title: 'Conference Papers'
 

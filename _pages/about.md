@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m an undergraduate in the Department of Computer Science at North Carolina State University (class of 2026). I’m especially interested in quantum computing systems, architectures, and security.
+I’m an undergraduate in the Department of Computer Science at North Carolina State University. I’m especially interested in quantum computing systems, architectures, and security.
 
 Research
 ======
