@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Site-specific overrides.
+
+   The theme owns colour, layout and chrome. This layer sets a serif for
+   reading text, caps the measure, and tightens vertical rhythm. Navigation,
+   sidebar and footer stay in the theme's sans, so the chrome reads as
+   interface and the page reads as document.
+
+   Note: `single` pages wrap content in .page__content, `archive` pages (CV,
+   publications, teaching) wrap it in .archive. Both need the same treatment.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Reading typography
+   -------------------------------------------------------------------------- */
+
+.page__content,
+.archive {
+  font-family: $serif;
+
+  /* Cap the measure on text blocks only. The theme floats these columns to the
+     right, so constraining the container itself would push the whole column
+     over and open a gap beside the sidebar. */
+  > p,
+  > ul,
+  > ol,
+  > blockquote {
+    max-width: 38em;
+  }
+
+  /* Georgia runs large for its nominal size, so hold the body at 1em and buy
+     readability with leading instead. */
+  p,
+  li {
+    line-height: 1.7;
+  }
+
+  /* Links sit lower and lighter so underlines clear Georgia's descenders. */
+  a {
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 0.06em;
+  }
+}
+
+.page__title,
+.archive__subtitle {
+  font-family: $serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Section headings. The theme gives .page__content h2 a hairline rule; the
+   archive layout has no equivalent, so match it here. */
+.page__content,
+.archive {
+  /* Listing entry titles are also <h2>, but they are items, not sections —
+     they must not pick up the section rule and hairline. */
+  h2:not(.archive__item-title) {
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+    font-family: $serif;
+    font-size: 1.15em;
+    font-weight: 600;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  h3:not(.archive__item-title) {
+    margin-top: 1.6em;
+    font-family: $serif;
+    font-weight: 600;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Publication and teaching listings
+   -------------------------------------------------------------------------- */
+
+.archive__item + .archive__item,
+.list__item + .list__item {
+  margin-top: 2em;
+}
+
+.archive__item-title {
+  margin-top: 1em;
+  padding-bottom: 0;
+  font-family: $serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  line-height: 1.35;
+  border-bottom: 0;
+}
+
+/* Venue / course line and citation: a size below the title so entries stay
+   scannable. Left at the normal text colour — the theme's muted grey is too
+   faint for a citation you actually want people to read. */
+.archive__item > p,
+.archive__item-excerpt {
+  font-family: $serif;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* On the CV, entries are compact <li> rows rather than full listing items.
+   They must not outweigh the section heading above them. */
+.archive li .archive__item-title {
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.archive li .archive__item-excerpt {
+  font-size: 0.9em;
+}
+
+.archive li .archive__item + .archive__item,
+.archive .list__item + .list__item {
+  margin-top: 0.75em;
+}
+
+/* --------------------------------------------------------------------------
+   Chrome stays sans
+   -------------------------------------------------------------------------- */
+
+.masthead,
+.sidebar,
+.page__footer,
+.author__name,
+.author__bio {
+  font-family: $sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Print: the CV should print as the CV, not as the site.
+   -------------------------------------------------------------------------- */
+
+@media print {
+  .masthead,
+  .sidebar,
+  .page__footer,
+  .page__meta,
+  .author__urls-wrapper {
+    display: none !important;
+  }
+
+  .page,
+  .archive {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    float: none;
+  }
+
+  .page__content,
+  .archive {
+    > p,
+    > ul,
+    > ol {
+      max-width: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

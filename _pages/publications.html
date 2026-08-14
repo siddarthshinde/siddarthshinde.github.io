@@ -1,6 +1,15 @@
 ---
+layout: archive
+title: "Publications"
 permalink: /publications/
-redirect_to: /research/#publications
-sitemap: false
+author_profile: true
+redirect_from:
+  - /research
+  - /research/
 ---
 
+{% include base_path %}
+
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}

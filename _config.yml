@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Siddarth Shinde"
 title_separator          : "-"
 name                     : &name "Siddarth Shinde"
-description              : &description "Quantum computing systems researcher and incoming Northwestern Computer Engineering Ph.D. student."
+description              : &description "Personal site of Siddarth Shinde."
 url                      : https://siddarthshinde.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile-640.jpg"
   name             : "Siddarth Shinde"
   pronouns         : # example: "she/her"  
-  bio              : "Incoming Computer Engineering Ph.D. student researching quantum computing systems."
+  bio              : "Incoming Ph.D. student in Computer Engineering, Northwestern University."
   location         : "Evanston, IL"
   employer         : "Northwestern University"
   uri              : "https://siddarthshinde.github.io/"
@@ -141,7 +141,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :
-og_description           : "Siddarth Shinde researches quantum computing systems, architectures, security, and algorithms."
+og_description           : "Siddarth Shinde works on quantum computing systems, architectures, security, and algorithms."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -221,6 +221,9 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -246,6 +249,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -254,7 +266,7 @@ defaults:
       layout: single
       author_profile: true
       share: false
-      comments: true
+      comments: false
 
 
 # Sass/SCSS

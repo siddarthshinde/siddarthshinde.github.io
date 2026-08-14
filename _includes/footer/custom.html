@@ -1,26 +1,2 @@
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var themeToggle = document.getElementById("theme-toggle");
-  var connectToggle = document.querySelector(".author__urls-wrapper button");
-
-  function updateThemeState() {
-    if (themeToggle) {
-      themeToggle.setAttribute("aria-pressed", String(document.documentElement.hasAttribute("data-theme")));
-    }
-  }
-
-  window.setTimeout(updateThemeState, 0);
-  if (themeToggle) {
-    themeToggle.addEventListener("click", function () {
-      window.setTimeout(updateThemeState, 0);
-    });
-  }
-  if (connectToggle) {
-    connectToggle.addEventListener("click", function () {
-      window.setTimeout(function () {
-        connectToggle.setAttribute("aria-expanded", String(connectToggle.classList.contains("open")));
-      }, 0);
-    });
-  }
-});
-</script>
+<!-- start custom footer snippets -->
+<!-- end custom footer snippets -->

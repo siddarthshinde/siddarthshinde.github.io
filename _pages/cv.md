@@ -1,8 +1,7 @@
 ---
-layout: single
-title: "Curriculum Vitae"
+layout: archive
+title: "CV"
 permalink: /cv/
-description: "Curriculum vitae for Siddarth Shinde, incoming Northwestern Computer Engineering Ph.D. student."
 author_profile: true
 redirect_from:
   - /resume
@@ -10,78 +9,49 @@ redirect_from:
   - /resume.html
   - /resume-json
   - /resume-json/
+  - /cv-json
   - /cv-json/
 ---
 
-{% assign profile = site.data.profile %}
+{% include base_path %}
 
-<div class="cv-header">
-  <p class="page-intro">Research, education, teaching, publications, awards, and selected technical work.</p>
-  <a class="button button--primary" href="/files/cv.pdf">Download PDF <span aria-hidden="true">↓</span></a>
-</div>
+A [PDF version]({{ base_path }}/files/cv.pdf) of this page is also available.
 
-<section class="cv-section" aria-labelledby="education-title">
-  <h2 id="education-title">Education</h2>
-  {% for item in profile.education %}
-  <article class="cv-entry">
-    <div class="cv-entry__main"><h3>{{ item.institution }}</h3><p>{{ item.degree }}</p>{% if item.details %}<p class="muted">{{ item.details }}</p>{% endif %}</div>
-    <div class="cv-entry__meta"><strong>{{ item.date }}</strong><span>{{ item.location }}</span></div>
-  </article>
-  {% endfor %}
-</section>
+## Education
+* Ph.D. in Computer Engineering, Northwestern University, starting September 2026
+* B.S. in Computer Science, North Carolina State University, May 2026
+  * Minors in mathematics and philosophy
+  * GPA: 3.87
 
-<section class="cv-section" aria-labelledby="research-title">
-  <h2 id="research-title">Research experience</h2>
-  {% for item in profile.research %}
-  <article class="cv-entry">
-    <div class="cv-entry__main"><h3>{{ item.role }}</h3><p>{{ item.institution }} · {{ item.department }}</p><p class="muted">Supervisor: {{ item.supervisor }}</p><p>{{ item.summary }}</p></div>
-    <div class="cv-entry__meta"><strong>{{ item.dates }}</strong><span>{{ item.location }}</span></div>
-  </article>
-  {% endfor %}
-</section>
+## Research experience
+* June–August 2025: Undergraduate Research Assistant
+  * Northwestern University, Department of Electrical and Computer Engineering
+  * Supervisor: Prof. Jakub Szefer
+  * Compared cloud quantum computers across providers under a metric that accounts for cost as well as fidelity.
 
-<section class="cv-section" aria-labelledby="industry-cv-title">
-  <h2 id="industry-cv-title">Industry experience</h2>
-  {% for item in profile.industry %}
-  <article class="cv-entry">
-    <div class="cv-entry__main"><h3>{{ item.role }}</h3><p>{{ item.organization }} · {{ item.team }}</p></div>
-    <div class="cv-entry__meta"><strong>{{ item.dates }}</strong><span>{{ item.location }}</span></div>
-  </article>
-  {% endfor %}
-</section>
+* May–August 2024: Undergraduate Research Assistant
+  * North Carolina State University, Department of Computer Science
+  * Supervisor: Prof. Chin Ho Lee
+  * Studied one-way communication complexity and streaming algorithms, and implemented frequency-estimation methods in C.
 
-<section class="cv-section" aria-labelledby="publication-cv-title">
-  <h2 id="publication-cv-title">Publication</h2>
-  {% for item in profile.publications %}
-  <article class="cv-publication"><h3><a href="{{ item.arxiv }}">{{ item.title }}</a></h3><p>{{ item.citation }}</p></article>
-  {% endfor %}
-</section>
+## Industry experience
+* Summer 2026: Quantum Computing Intern
+  * apexanalytix, Data Science, Greensboro, NC
 
-<section class="cv-section" aria-labelledby="teaching-cv-title">
-  <h2 id="teaching-cv-title">Teaching experience</h2>
-  {% for item in profile.teaching %}
-  <article class="cv-entry cv-entry--compact">
-    <div class="cv-entry__main"><h3>{{ item.course }}: {{ item.title }}</h3><p>Undergraduate Teaching Assistant · Supervisor: {{ item.supervisor }}</p></div>
-    <div class="cv-entry__meta"><strong>{{ item.dates }}</strong></div>
-  </article>
-  {% endfor %}
-</section>
+## Teaching experience
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
-<section id="awards" class="cv-section" aria-labelledby="awards-title">
-  <h2 id="awards-title">Awards and fellowships</h2>
-  {% for item in profile.awards %}<p><strong>{{ item.name }}</strong>, {{ item.institution }}, {{ item.year }}.</p>{% endfor %}
-</section>
+## Publications
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
-<section class="cv-section" aria-labelledby="projects-cv-title">
-  <h2 id="projects-cv-title">Selected projects</h2>
-  {% for item in profile.projects %}
-  <article class="cv-project"><h3>{{ item.title }} <span>{{ item.year }}</span></h3><p>{{ item.description }}</p></article>
-  {% endfor %}
-</section>
+## Awards and fellowships
+* Royal E. Cabell Fellowship, Northwestern University, 2026
 
-<section class="cv-section" aria-labelledby="skills-cv-title">
-  <h2 id="skills-cv-title">Technical skills</h2>
-  <p><strong>Languages:</strong> {{ profile.skills.languages }}</p>
-  <p><strong>Quantum:</strong> {{ profile.skills.quantum }}</p>
-  <p><strong>Tools &amp; frameworks:</strong> {{ profile.skills.tools }}</p>
-</section>
+## Technical skills
+* Languages: Python, Java, JavaScript/TypeScript, C, SQL, x86 assembly
+* Quantum: Qiskit, AWS Braket, IBM Quantum
+* Tools: Git, Docker, Linux, Flask, React, Spring, Hibernate, JUnit, ROS
