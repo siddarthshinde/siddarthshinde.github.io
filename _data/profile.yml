@@ -1,0 +1,136 @@
+name: "Siddarth Shinde"
+headline: "Incoming Ph.D. student in Computer Engineering at Northwestern University"
+status: "Starting September 2026"
+email: "siddarthshinde@u.northwestern.edu"
+location: "Evanston, Illinois"
+summary: >-
+  I study how quantum computing systems can be evaluated, compared, and made
+  more secure. My work sits at the intersection of quantum architectures,
+  systems measurement, security, and algorithms.
+
+interests:
+  - "Quantum computing systems and architectures"
+  - "Quantum computer security"
+  - "Quantum algorithms"
+
+education:
+  - institution: "Northwestern University"
+    degree: "Ph.D. in Computer Engineering"
+    date: "Starting September 2026"
+    location: "Evanston, IL"
+  - institution: "North Carolina State University"
+    degree: "B.S. in Computer Science, Departmental Honors"
+    details: "Minors in Mathematics and Philosophy · GPA: 3.87"
+    date: "May 2026"
+    location: "Raleigh, NC"
+
+research:
+  - institution: "Northwestern University"
+    role: "Undergraduate Research Assistant"
+    department: "Department of Electrical and Computer Engineering"
+    supervisor: "Prof. Jakub Szefer"
+    dates: "June–August 2025"
+    location: "Evanston, IL"
+    summary: >-
+      Developed a cost-aware framework for comparing cloud quantum computers,
+      including reproducible data collection, vendor-aware pricing models, and
+      fidelity analysis across commercial QPUs.
+  - institution: "North Carolina State University"
+    role: "Undergraduate Research Assistant"
+    department: "Department of Computer Science"
+    supervisor: "Prof. Chin Ho Lee"
+    dates: "May–August 2024"
+    location: "Raleigh, NC"
+    summary: >-
+      Studied one-way communication complexity and streaming algorithms,
+      implemented frequency-estimation methods in C, and wrote an internal
+      report on the underlying proofs and results.
+
+industry:
+  - organization: "apexanalytix"
+    role: "Quantum Computing Intern"
+    team: "Data Science"
+    dates: "Summer 2026"
+    location: "Greensboro, NC"
+
+publications:
+  - title: "Quantum Fidelity-per-Cost: A Metric for Evaluation of Quantum Computing Systems"
+    authors: "Siddarth Shinde and Jakub Szefer"
+    venue: "IEEE International Conference on Quantum Computing and Engineering (QCE)"
+    year: "2026"
+    status: "Accepted"
+    arxiv: "https://arxiv.org/abs/2607.28572"
+    pdf: "https://arxiv.org/pdf/2607.28572"
+    doi: "https://doi.org/10.48550/arXiv.2607.28572"
+    detail_url: "/research/quantum-fidelity-per-cost/"
+    citation: >-
+      Siddarth Shinde and Jakub Szefer. “Quantum Fidelity-per-Cost: A Metric
+      for Evaluation of Quantum Computing Systems.” IEEE International
+      Conference on Quantum Computing and Engineering (QCE), 2026. Accepted.
+      arXiv:2607.28572.
+    summary: >-
+      A cross-provider study of 14 cloud QPU access paths (12 physical QPUs)
+      across AWS, IBM Quantum Runtime, IQM Resonance, and OQC, together with a
+      metric that combines output fidelity, shot count, and monetary cost.
+
+projects:
+  - title: "OceanVoice"
+    year: "2026"
+    technologies:
+      - "React"
+      - "TypeScript"
+      - "Python"
+      - "Flask"
+    description: >-
+      Built a voice-first interface for an ocean-science platform with
+      transcript-driven execution and deliberate clarification and
+      confirmation flows.
+  - title: "Grover’s Search Lower Bound"
+    year: "2025"
+    technologies:
+      - "Quantum algorithms"
+      - "Complexity theory"
+      - "Technical writing"
+    description: >-
+      Wrote a formal technical report proving the Ω(√N) quantum query lower
+      bound for unstructured search using the BBBV hybrid argument.
+    report: "https://github.com/siddarthshinde/csc591-report/blob/main/CSC_591_CSTheoryToolkit_Project_Siddarth_Shinde.pdf"
+
+teaching:
+  - course: "CSC 333"
+    title: "Automata, Grammars, and Computability"
+    dates: "August–December 2024"
+    supervisor: "Prof. Abida Haque"
+    description: >-
+      Led oral homework sessions, evaluated proof strategies, held office
+      hours, and graded problem sets and exams.
+  - course: "CSC 116"
+    title: "Introduction to Computing (Java)"
+    dates: "January–May 2024"
+    supervisor: "Prof. Suzanne Balik"
+    description: >-
+      Supported students through office hours and live debugging, graded
+      assignments and exams, and automated ZyBooks grading with Python.
+  - course: "CSC 110"
+    title: "Computer Science Principles"
+    dates: "August–December 2023"
+    supervisor: "Prof. Thomas Price"
+    description: >-
+      Supported introductory Python students and built a Piazza API tool to
+      streamline assessment of discussion posts.
+
+awards:
+  - name: "Royal E. Cabell Fellowship"
+    institution: "Northwestern University"
+    year: "2026"
+
+skills:
+  languages: "Python, Java, JavaScript/TypeScript, C, SQL, x86 Assembly"
+  quantum: "Qiskit, AWS Braket, IBM Quantum"
+  tools: "Git, Docker, Linux, Flask, React, Spring, Hibernate, JUnit, ROS"
+
+links:
+  website: "https://siddarthshinde.github.io/"
+  github: "https://github.com/siddarthshinde"
+  linkedin: "https://www.linkedin.com/in/siddarth-shinde"
+  orcid: "https://orcid.org/0009-0000-1863-7139"

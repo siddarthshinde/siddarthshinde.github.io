@@ -1,12 +1,30 @@
 ---
-layout: archive
+layout: single
 title: "Teaching"
 permalink: /teaching/
+description: "Teaching experience in theory and introductory computer science at NC State."
 author_profile: true
+redirect_from:
+  - /teaching/2023-fall-teaching
+  - /teaching/2024-spring-teaching
+  - /teaching/2024-fall-teaching
 ---
 
-{% include base_path %}
+{% assign profile = site.data.profile %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<p class="page-intro">From first programs to formal proofs, I enjoy helping students develop the confidence to reason through unfamiliar problems.</p>
+
+<div class="course-list">
+  {% for item in profile.teaching %}
+  <article class="course-card">
+    <div class="course-card__code">{{ item.course }}</div>
+    <div class="course-card__body">
+      <p class="card-kicker">{{ item.dates }}</p>
+      <h2>{{ item.title }}</h2>
+      <p class="byline">Undergraduate Teaching Assistant · NC State University</p>
+      <p>{{ item.description }}</p>
+      <p class="course-card__supervisor">Supervisor: {{ item.supervisor }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>

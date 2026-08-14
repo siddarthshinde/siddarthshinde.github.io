@@ -12,25 +12,25 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Siddarth Shinde"
 title_separator          : "-"
 name                     : &name "Siddarth Shinde"
-description              : &description "Siddarth Shinde's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Quantum computing systems researcher and incoming Northwestern Computer Engineering Ph.D. student."
 url                      : https://siddarthshinde.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "siddarthshinde/siddarthshinde.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile-640.jpg"
   name             : "Siddarth Shinde"
   pronouns         : # example: "she/her"  
-  bio              : "CS Student at NC State"
-  location         : "Raleigh, NC"
-  employer         : "North Carolina State University"
-  uri              : # URL
-  email            : "sshinde4@ncsu.edu" 
+  bio              : "Incoming Computer Engineering Ph.D. student researching quantum computing systems."
+  location         : "Evanston, IL"
+  employer         : "Northwestern University"
+  uri              : "https://siddarthshinde.github.io/"
+  email            : "siddarthshinde@u.northwestern.edu"
 
   # Academic websites
   academia         : # URL
@@ -122,7 +122,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true
   path                   : # blank (default) uses feed.xml
 
 
@@ -140,19 +140,22 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 :
+og_description           : "Siddarth Shinde researches quantum computing systems, architectures, security, and algorithms."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Siddarth Shinde"
+  links:
+    - "https://github.com/siddarthshinde"
+    - "https://www.linkedin.com/in/siddarth-shinde"
+    - "https://orcid.org/0009-0000-1863-7139"
 
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false
   google:
     tracking_id          :
 
@@ -218,16 +221,7 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -252,15 +246,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -270,23 +255,6 @@ defaults:
       author_profile: true
       share: false
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
@@ -299,12 +267,11 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York
 
 
 # Plugins
 plugins:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
@@ -313,7 +280,6 @@ plugins:
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
