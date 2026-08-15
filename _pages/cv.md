@@ -20,8 +20,8 @@ A [PDF version]({{ base_path }}/files/cv.pdf) of this page is also available.
 ## Education
 * Ph.D. in Computer Engineering, Northwestern University, starting September 2026
 * B.S. in Computer Science, North Carolina State University, May 2026
+  * Computer Science Departmental Honors
   * Minors in mathematics and philosophy
-  * GPA: 3.87
 
 ## Research experience
 * June–August 2025: Undergraduate Research Assistant
@@ -36,7 +36,8 @@ A [PDF version]({{ base_path }}/files/cv.pdf) of this page is also available.
 
 ## Industry experience
 * Summer 2026: Quantum Computing Intern
-  * apexanalytix, Data Science, Greensboro, NC
+  * apexanalytix, Data Science team
+  * Greensboro, North Carolina
 
 ## Teaching experience
 <ul>{% for post in site.teaching reversed %}

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm starting a Ph.D. in Computer Engineering at Northwestern University in September 2026. I finished my B.S. in Computer Science at North Carolina State University in May 2026, with minors in mathematics and philosophy.
+I'm starting a Ph.D. in Computer Engineering at Northwestern University in September 2026. I finished my B.S. in Computer Science at North Carolina State University in May 2026, with departmental honors and minors in mathematics and philosophy.
 
 My research areas are quantum computing systems and architectures, quantum computer security, and quantum algorithms.
 
