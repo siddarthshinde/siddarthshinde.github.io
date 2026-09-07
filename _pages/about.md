@@ -7,16 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-I'm starting a Ph.D. in Computer Engineering at Northwestern University in September 2026. I finished my B.S. in Computer Science at North Carolina State University in May 2026, with departmental honors and minors in mathematics and philosophy.
+I'm a Ph.D. student in Computer Engineering at Northwestern University. I finished my B.S. in Computer Science at North Carolina State University in May 2026, with departmental honors and minors in mathematics and philosophy.
 
 My research areas are quantum computing systems and architectures, quantum computer security, and quantum algorithms.
 
 ## Research
 In Summer 2025 I was an undergraduate research assistant in the Department of Electrical and Computer Engineering at Northwestern University, working with Prof. Jakub Szefer. We looked at how to compare cloud quantum computers when cost is taken into account alongside fidelity. That work became a paper accepted at IEEE QCE 2026.
 
-Before that I worked with Prof. Chin Ho Lee in the Department of Computer Science at NC State on one-way communication complexity and streaming algorithms, implementing frequency-estimation methods in C.
-
-This summer I'm a quantum computing intern on the data science team at apexanalytix in Greensboro, North Carolina.
+Before that I worked with Prof. Chin Ho Lee in the Department of Computer Science at NC State on an independent study in communication complexity.
 
 ## Teaching
 I was an undergraduate teaching assistant for three courses at NC State:
