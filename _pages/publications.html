@@ -11,5 +11,9 @@ redirect_from:
 {% include base_path %}
 
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  <article class="archive__item">
+    <h2 class="archive__item-title"><a href="{{ post.paperurl }}">{{ post.title }}</a></h2>
+    <p>{{ post.authors }}<br><i>{{ post.venue }}</i>, {{ post.date | date: '%Y' }}.</p>
+    {% if post.excerpt %}<div class="archive__item-excerpt">{{ post.excerpt | markdownify }}</div>{% endif %}
+  </article>
 {% endfor %}

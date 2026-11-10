@@ -3,10 +3,17 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+redirect_from:
+  - /teaching/2023-fall-teaching
+  - /teaching/2024-spring-teaching
+  - /teaching/2024-fall-teaching
 ---
 
 {% include base_path %}
 
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  <article class="archive__item">
+    <h2 class="archive__item-title">{{ post.title }}</h2>
+    <p>{{ post.venue }} · {{ post.term }}</p>
+  </article>
 {% endfor %}
